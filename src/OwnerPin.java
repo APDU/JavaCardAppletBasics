@@ -22,7 +22,7 @@ public class OwnerPinTest extends Applet {
 	
 	public static void install(byte[] bArray, short bOffset, byte bLength) {
 		// GP-compliant JavaCard applet registration
-		new ownerPin.OwnerPinTest().register(bArray, (short) (bOffset + 1),
+		new im.map.OwnerPinTest().register(bArray, (short) (bOffset + 1),
 				bArray[bOffset]);
 	}
 

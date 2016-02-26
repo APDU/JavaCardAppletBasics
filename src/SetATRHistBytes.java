@@ -21,7 +21,7 @@ public class SetATRHistBytes extends Applet {
 			{ (byte)0x11, (byte)0x22, (byte)0x33, (byte)0x44, (byte)0x55, (byte)0x66, (byte)0x77, (byte)0x88, (byte)0x99, (byte)0xAA, };
 	public static void install(byte[] bArray, short bOffset, byte bLength) {
 		// GP-compliant JavaCard applet registration
-		new setATRHistBytes.SetATRHistBytes().register(bArray,
+		new im.map.SetATRHistBytes().register(bArray,
 				(short) (bOffset + 1), bArray[bOffset]);
 	}
 

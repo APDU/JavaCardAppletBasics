@@ -24,7 +24,7 @@ public class GPCVM extends Applet {
 			{(byte)0x12, (byte)0x34, (byte)0x56 };
 	public static void install(byte[] bArray, short bOffset, byte bLength) {
 		// GP-compliant JavaCard applet registration
-		new gpCVM.GPCVM().register(bArray, (short) (bOffset + 1),
+		new im.map.GPCVM().register(bArray, (short) (bOffset + 1),
 				bArray[bOffset]);
 	}
 
