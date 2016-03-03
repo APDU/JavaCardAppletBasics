@@ -1,7 +1,7 @@
 /**
  * 
  */
-package terminateCard;
+package im.map;
 
 import org.globalplatform.GPSystem;
 
@@ -11,13 +11,13 @@ import javacard.framework.Applet;
 import javacard.framework.ISOException;
 
 /**
- * @author ZM
+ * @author APDU
  *
  */
 public class TerminateCard extends Applet {
 	public static void install(byte[] bArray, short bOffset, byte bLength) {
 		// GP-compliant JavaCard applet registration
-		new terminateCard.TerminateCard().register(bArray,
+		new im.map.TerminateCard().register(bArray,
 				(short) (bOffset + 1), bArray[bOffset]);
 	}
 
@@ -31,7 +31,7 @@ public class TerminateCard extends Applet {
 		switch (buf[ISO7816.OFFSET_INS]) {
 		case (byte) 0xDC:
 			if ( !GPSystem.terminateCard() ) 
-				ISOException.throwIt( (short)0x6666 );		
+				ISOException.throwIt( (short)0x6982 );		
 			break;
 		default:
 			// good practice: If you don't know the INStruction, say so:
