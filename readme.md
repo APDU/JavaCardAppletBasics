@@ -14,4 +14,7 @@
 5、TerminateCard  
   卡片锁定，使卡上所有应用功能失效。  
 
+6、GetRandom   
+   获取卡片随机数。  
+
 仅仅是Demo，代码质量比较次~  
